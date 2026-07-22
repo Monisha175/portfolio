@@ -672,7 +672,7 @@ span.highlight-cloud {
     border: 1px solid #121A2D;
     border-radius: 6px;
     padding: 12px;
-    height: 100px;
+    height: 115px;
     overflow-y: hidden;
     position: relative;
 }
@@ -1551,7 +1551,7 @@ textarea.form-input {
 
     .metric-logs-wrapper {
         padding: 10px;
-        height: 85px;
+        height: 110px;
     }
 }
 
