@@ -1444,7 +1444,7 @@ textarea.form-input {
     }
 
     .hero-image-wrapper {
-        order: -1;
+        /* natural HTML source order: content first, then image on mobile */
     }
 
     .hero-image-frame {
@@ -1531,7 +1531,27 @@ textarea.form-input {
     }
 
     .dashboard-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .metric-card {
+        padding: 12px;
+        gap: 6px;
+    }
+
+    .metric-value {
+        font-size: 16px;
+    }
+
+    .metric-label {
+        font-size: 10px;
+    }
+
+    .metric-logs-wrapper {
+        padding: 10px;
+        height: 85px;
     }
 }
 
@@ -1577,5 +1597,15 @@ textarea.form-input {
     #terminal-body {
         height: 260px;
         padding: 14px;
+    }
+
+    .terminal-prompt {
+        font-size: 0 !important;
+    }
+
+    .terminal-prompt::after {
+        content: "visitor:~$";
+        font-size: 12px;
+        color: #A78BFA;
     }
 }

@@ -281,7 +281,7 @@ GitHub  : <a href="https://github.com/Monisha175/" target="_blank" class="highli
 
         // Create user input command echo line
         const echoLine = document.createElement('div');
-        echoLine.innerHTML = `<span style="color: #A78BFA">visitor@monisha-dev:~$</span> ${cmdText}`;
+        echoLine.innerHTML = `<span class="terminal-prompt" style="color: #A78BFA">visitor@monisha-dev:~$</span> ${cmdText}`;
         terminalHistory.appendChild(echoLine);
 
         if (cmdClean === '') {
